@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="720.0" prefWidth="480.0" style="-fx-background-color: #daeef3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sefapplication.CartSceneController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="480.0" style="-fx-background-color: #0675ba;">
+         <children>
+            <Text fill="WHITE" layoutX="205.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cart">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" layoutX="40.0" layoutY="220.0" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #6699ff;" text="Product">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <effect>
+            <Glow level="0.15" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="180.0" layoutY="220.0" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #6699ff;" text="Quantity">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <effect>
+            <Glow level="0.15" />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="320.0" layoutY="220.0" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #6699ff;" text="Price">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <effect>
+            <Glow level="0.15" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
