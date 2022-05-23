@@ -44,14 +44,13 @@ public class LoginSceneController {
 
             while ((buff = br.readLine()) != null) {
                 flag++;
-                System.out.println(flag);
                 if((flag+1) % 5 == 0){
                     username = buff;
                 }
                 if(flag % 5 == 0){
                     password = buff;
 
-                    if( username.equals((String)usernameTextField.getText()) && password.equals((String)passwordField.getText()) ){
+                    if( username.equals(usernameTextField.getText()) && password.equals(passwordField.getText()) ){
                         return 1;
                     }
                 }

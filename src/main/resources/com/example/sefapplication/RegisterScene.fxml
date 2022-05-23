@@ -26,7 +26,7 @@
             <TextField fx:id="nameField" layoutX="85.0" layoutY="40.0" prefHeight="30.0" prefWidth="311.0" />
             <TextField fx:id="emailField" layoutX="85.0" layoutY="110.0" prefHeight="30.0" prefWidth="311.0" />
             <TextField fx:id="phoneField" layoutX="85.0" layoutY="180.0" prefHeight="30.0" prefWidth="311.0" />
-            <TextField fx:id="usenameField" layoutX="85.0" layoutY="250.0" prefHeight="30.0" prefWidth="311.0" />
+            <TextField fx:id="usernameField" layoutX="85.0" layoutY="250.0" prefHeight="30.0" prefWidth="311.0" />
             <Text layoutX="85.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full name:">
                <font>
                   <Font size="18.0" />
@@ -53,7 +53,7 @@
                </font>
             </Text>
             <PasswordField fx:id="passwordField" layoutX="85.0" layoutY="320.0" prefHeight="30.0" prefWidth="311.0" />
-            <Button alignment="CENTER" layoutX="85.0" layoutY="389.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="311.0" style="-fx-background-color: #0675ba;" text="Register" textFill="WHITE">
+            <Button alignment="CENTER" layoutX="85.0" layoutY="389.0" mnemonicParsing="false" onAction="#registerButton" prefHeight="30.0" prefWidth="311.0" style="-fx-background-color: #0675ba;" text="Register" textFill="WHITE">
                <effect>
                   <Glow level="0.15" />
                </effect>
@@ -69,7 +69,7 @@
                   <Glow level="0.15" />
                </effect>
             </Button>
-            <Label alignment="CENTER" layoutX="85.0" layoutY="351.0" prefHeight="21.0" prefWidth="311.0" textFill="#fc3737">
+            <Label fx:id="statusMessage" alignment="CENTER" layoutX="85.0" layoutY="351.0" prefHeight="21.0" prefWidth="311.0" textFill="#fc3737">
                <font>
                   <Font size="14.0" />
                </font>
