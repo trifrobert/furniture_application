@@ -66,7 +66,7 @@ public class RegisterSceneController {
         return 1;
     }
 
-    public void registerButton(ActionEvent event) throws IOException{
+    public void registerButton(){
 
         String name = nameField.getText();
         String email = emailField.getText();
@@ -83,8 +83,8 @@ public class RegisterSceneController {
         if(!c1 && !c2 && !c3 && !c4 && !c5){
             if(validateRegistration() == 1){
                 try{
-                    //File file = new File("src/data.txt");
 
+                    System.out.println(str);
                     str = str + name + "\n";
                     str = str + email + "\n";
                     str = str + phone + "\n";
@@ -92,7 +92,7 @@ public class RegisterSceneController {
                     str = str + password + "\n";
 
                     PrintStream out;
-                    out=new PrintStream(new FileOutputStream("src/data.txt"));
+                    out = new PrintStream(new FileOutputStream("src/data.txt"));
                     out.append(str);
                     str = "";
 

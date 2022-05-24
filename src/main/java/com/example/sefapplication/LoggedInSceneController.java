@@ -18,6 +18,16 @@ public class LoggedInSceneController {
     @FXML
     private Parent root;
 
+    public static boolean isLoggedOut = false;
+
+    public static boolean getStatus(){
+        return isLoggedOut;
+    }
+
+    public static void changeStatus(boolean status){
+        isLoggedOut = status;
+    }
+
     public void switchToCartScene(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("CartScene.fxml")));
         Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
@@ -32,6 +42,7 @@ public class LoggedInSceneController {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        changeStatus(true);
     }
 
 }
