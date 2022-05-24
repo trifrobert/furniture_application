@@ -31,15 +31,14 @@ public class LoginSceneController {
     @FXML
     private Label statusMessage;
 
-
     public int validateLogin()  {
         try{
             File file = new File("src/data.txt");
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);
             String username = "";
-            String password = "";
-            String buff = "";
+            String password ;
+            String buff ;
             int flag = 0;
 
             while ((buff = br.readLine()) != null) {
@@ -63,13 +62,15 @@ public class LoginSceneController {
     }
 
     public void loginButtonOnAction(ActionEvent event) throws IOException {
-        if(usernameTextField.getText().isBlank() == false && passwordField.getText().isBlank() == false) {
+        if(!usernameTextField.getText().isBlank() && !passwordField.getText().isBlank()) {
             if(validateLogin() == 1) {
                 root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("LoggedInScene.fxml")));
                 Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
                 scene = new Scene(root);
                 stage.setScene(scene);
                 stage.show();
+                LogginStatus.changeStatus(true);
+                LogoutStatus.changeStatus(false);
             }
             else {
                 statusMessage.setTextFill(Color.web("#bd0f0f"));
@@ -82,7 +83,6 @@ public class LoginSceneController {
         }
     }
 
-
     public void switchToMainScene(ActionEvent event) throws IOException {
         root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("MainScene.fxml")));
         Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
@@ -90,14 +90,4 @@ public class LoginSceneController {
         stage.setScene(scene);
         stage.show();
     }
-
-    /*
-    public void switchToLoggedInScene(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("MainScene.fxml")));
-        Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
-     */
 }

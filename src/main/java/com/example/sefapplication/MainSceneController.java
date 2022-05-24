@@ -63,5 +63,7 @@ public class MainSceneController implements Initializable {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        LogoutStatus.changeStatus(true);
+        LogginStatus.changeStatus(false);
     }
 }
