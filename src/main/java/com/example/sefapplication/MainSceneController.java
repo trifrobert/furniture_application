@@ -25,12 +25,20 @@ public class MainSceneController implements Initializable {
     private Scene scene;
     @FXML
     private Parent root;
+    @FXML
+    private ImageView image1;
 
     @Override
     public void initialize(URL URL, ResourceBundle resourceBundle){
         File backgroundFile = new File("src/Images/searchButton.png");
         Image myImage = new Image(backgroundFile.toURI().toString());
+
+        File f1 = new File("src/Images/front_page_template.jpg");
+        Image myImage1 = new Image(f1.toURI().toString());
+
         searchButton.setImage(myImage);
+        image1.setImage(myImage1);
+
     }
 
     public void switchToLoginScene(ActionEvent event) throws IOException {
