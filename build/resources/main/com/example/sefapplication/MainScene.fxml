@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sefapplication.MainSceneController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sefapplication.MainSceneController">
    <children>
       <Pane prefHeight="200.0" prefWidth="480.0" style="-fx-background-color: #0675ba;">
          <children>
@@ -32,7 +32,7 @@
                   <Glow level="0.15" />
                </effect>
             </Button>
-            <Button layoutX="160.0" layoutY="155.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #6699ff;" text="Beds" textFill="WHITE">
+            <Button layoutX="160.0" layoutY="155.0" mnemonicParsing="false" onAction="#switchToBedsScene" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #6699ff;" text="Beds" textFill="WHITE">
                <effect>
                   <Glow level="0.15" />
                </effect>
@@ -63,15 +63,13 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <Pane layoutX="65.0" layoutY="110.0" prefHeight="35.0" prefWidth="35.0"
-                  style="-fx-background-color: #6699ff;">
+            <Pane layoutX="65.0" layoutY="110.0" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #6699ff;">
                <effect>
-                  <Glow level="0.2"/>
+                  <Glow level="0.2" />
                </effect>
-               <ImageView fx:id="searchButton" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
-                          preserveRatio="true">
+               <ImageView fx:id="searchButton" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                   <image>
-                     <Image url="@../../../../../Images/searchButton.png"/>
+                     <Image url="@../../../../../Images/searchButton.png" />
                   </image>
                </ImageView>
             </Pane>

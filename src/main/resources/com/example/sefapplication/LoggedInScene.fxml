@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="720.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sefapplication.LoggedInSceneController">
    <children>
       <Pane prefHeight="200.0" prefWidth="480.0" style="-fx-background-color: #0675ba;" />
-      <Pane layoutY="200.0" prefHeight="520.0" prefWidth="480.0" style="-fx-background-color: #daeef3;" />
       <Button fx:id="logoutButton" layoutX="100.0" layoutY="20.0" mnemonicParsing="false" onAction="#switchToMainScene" prefHeight="60.0" prefWidth="100.0" style="-fx-background-color: #025a99;" text="Logout" textFill="WHITE">
          <effect>
             <Glow level="0.15" />
@@ -51,7 +51,7 @@
             <Glow level="0.15" />
          </effect>
       </Button>
-      <Button layoutX="160.0" layoutY="155.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #6699ff;" text="Beds" textFill="WHITE">
+      <Button layoutX="160.0" layoutY="155.0" mnemonicParsing="false" onAction="#switchToBedsScene" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #6699ff;" text="Beds" textFill="WHITE">
          <effect>
             <Glow level="0.15" />
          </effect>
@@ -66,5 +66,50 @@
             <Glow level="0.15" />
          </effect>
       </Button>
+      <Pane layoutY="200.0" prefHeight="520.0" prefWidth="480.0" style="-fx-background-color: #daeef3;">
+         <children>
+            <ImageView fx:id="image1" fitHeight="520.0" fitWidth="480.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Images/front_page_template.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="376.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BESTSELLER!" wrappingWidth="69.13671875" />
+            <Text layoutX="375.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BESTSELLER!" wrappingWidth="69.13671875" />
+            <Text layoutX="376.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BESTSELLER!" wrappingWidth="69.13671875" />
+            <Text layoutX="375.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Only 650lei" />
+            <Text layoutX="376.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Only 1950lei" />
+            <Text layoutX="376.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Only 1250lei" />
+            <Text layoutX="176.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Archie armchair in pink">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="176.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oval dining table in walnut">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="176.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Galway double bed in oak" wrappingWidth="219.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="image2" fitHeight="104.0" fitWidth="126.0" layoutX="53.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Images/chair3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="image3" fitHeight="77.0" fitWidth="137.0" layoutX="39.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Images/bed1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="image4" fitHeight="82.0" fitWidth="137.0" layoutX="39.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Images/table1.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>

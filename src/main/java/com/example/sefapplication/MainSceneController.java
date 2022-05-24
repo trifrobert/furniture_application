@@ -93,4 +93,12 @@ public class MainSceneController implements Initializable {
         LogoutStatus.changeStatus(true);
         LogginStatus.changeStatus(false);
     }
+
+    public void switchToBedsScene(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Beds.fxml")));
+        Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }
