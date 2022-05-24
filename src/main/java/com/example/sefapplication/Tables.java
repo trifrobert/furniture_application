@@ -39,13 +39,13 @@ public class Tables implements Initializable {
         File f1 = new File("src/Images/front_page_template.jpg");
         Image myImage1 = new Image(f1.toURI().toString());
 
-        File f3 = new File("src/Images/bed1.jpg");
+        File f3 = new File("src/Images/table1.jpg");
         Image myImage3 = new Image(f3.toURI().toString());
 
-        File f5 = new File("src/Images/bed2.jpg");
+        File f5 = new File("src/Images/table3.png");
         Image myImage5 = new Image(f5.toURI().toString());
 
-        File f6 = new File("src/Images/bed3.jpg");
+        File f6 = new File("src/Images/table2.jpg");
         Image myImage6 = new Image(f6.toURI().toString());
 
         image1.setImage(myImage1);
