@@ -31,16 +31,6 @@ public class LoginSceneController {
     @FXML
     private Label statusMessage;
 
-    public static boolean isLoggedIn = false;
-
-    public static boolean getStatus(){
-        return isLoggedIn;
-    }
-
-    public static void changeStatus(boolean status){
-        isLoggedIn = status;
-    }
-
     public int validateLogin()  {
         try{
             File file = new File("src/data.txt");
@@ -79,7 +69,8 @@ public class LoginSceneController {
                 scene = new Scene(root);
                 stage.setScene(scene);
                 stage.show();
-                changeStatus(true);
+                LogginStatus.changeStatus(true);
+                LogoutStatus.changeStatus(false);
             }
             else {
                 statusMessage.setTextFill(Color.web("#bd0f0f"));

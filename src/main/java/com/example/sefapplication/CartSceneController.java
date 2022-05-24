@@ -20,7 +20,7 @@ public class CartSceneController {
 
     public void switchToMainScene(ActionEvent event) throws IOException {
 
-        if(LoginSceneController.getStatus() && !LoggedInSceneController.getStatus()){
+        if(LogginStatus.getStatus() && !LogoutStatus.getStatus()){
             root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("LoggedInScene.fxml")));
             Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
             scene = new Scene(root);
