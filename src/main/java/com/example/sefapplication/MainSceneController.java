@@ -7,6 +7,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
@@ -20,6 +22,14 @@ import java.util.ResourceBundle;
 public class MainSceneController implements Initializable {
 
     @FXML
+    public Button registerButton;
+    @FXML
+    public TextField searchBar;
+    @FXML
+    public Button loginButton;
+    @FXML
+    public Button cartButton;
+    @FXML
     private ImageView searchButton;
     @FXML
     private Scene scene;
@@ -27,6 +37,12 @@ public class MainSceneController implements Initializable {
     private Parent root;
     @FXML
     private ImageView image1;
+    @FXML
+    private ImageView image2;
+    @FXML
+    private ImageView image3;
+    @FXML
+    private ImageView image4;
 
     @Override
     public void initialize(URL URL, ResourceBundle resourceBundle){
@@ -36,9 +52,20 @@ public class MainSceneController implements Initializable {
         File f1 = new File("src/Images/front_page_template.jpg");
         Image myImage1 = new Image(f1.toURI().toString());
 
+        File f2 = new File("src/Images/chair3.png");
+        Image myImage2 = new Image(f2.toURI().toString());
+
+        File f3 = new File("src/Images/bed1.jpg");
+        Image myImage3 = new Image(f3.toURI().toString());
+
+        File f4 = new File("src/Images/table1.jpg");
+        Image myImage4 = new Image(f4.toURI().toString());
+
         searchButton.setImage(myImage);
         image1.setImage(myImage1);
-
+        image2.setImage(myImage2);
+        image3.setImage(myImage3);
+        image4.setImage(myImage4);
     }
 
     public void switchToLoginScene(ActionEvent event) throws IOException {

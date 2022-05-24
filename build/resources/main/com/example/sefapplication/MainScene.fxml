@@ -63,17 +63,17 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <Pane layoutX="65.0" layoutY="110.0" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: #6699ff;">
+            <Pane layoutX="65.0" layoutY="110.0" prefHeight="35.0" prefWidth="35.0"
+                  style="-fx-background-color: #6699ff;">
                <effect>
-                  <Glow level="0.2" />
+                  <Glow level="0.2"/>
                </effect>
-               <children>
-                  <ImageView fx:id="searchButton" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../Images/searchButton.png" />
-                     </image>
-                  </ImageView>
-               </children>
+               <ImageView fx:id="searchButton" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true"
+                          preserveRatio="true">
+                  <image>
+                     <Image url="@../../../../../Images/searchButton.png"/>
+                  </image>
+               </ImageView>
             </Pane>
          </children>
       </Pane>
@@ -105,19 +105,19 @@
                   <Font size="18.0" />
                </font>
             </Text>
-            <ImageView fx:id="image3" fitHeight="68.0" fitWidth="132.0" layoutX="44.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="image2" fitHeight="104.0" fitWidth="126.0" layoutX="53.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../project%20images/bed1.jpg" />
+                  <Image url="@../../../../../Images/chair3.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="image2" fitHeight="99.0" fitWidth="121.0" layoutX="50.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="image3" fitHeight="77.0" fitWidth="137.0" layoutX="39.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../project%20images/chair3.png" />
+                  <Image url="@../../../../../Images/bed1.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="image4" fitHeight="68.0" fitWidth="150.0" layoutX="40.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="image4" fitHeight="82.0" fitWidth="137.0" layoutX="39.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../project%20images/table1.jpg" />
+                  <Image url="@../../../../../Images/table1.jpg" />
                </image>
             </ImageView>
          </children></Pane>
