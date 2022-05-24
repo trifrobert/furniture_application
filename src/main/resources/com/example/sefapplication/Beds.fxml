@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sefapplication.Beds">
+<AnchorPane prefHeight="720.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sefapplication.Beds">
    <children>
       <Pane prefHeight="200.0" prefWidth="480.0" style="-fx-background-color: #0675ba;">
          <children>
@@ -22,36 +22,42 @@
       </Pane>
       <Pane layoutY="200.0" prefHeight="520.0" prefWidth="480.0" style="-fx-background-color: #daeef3;">
          <children>
-            <ImageView fx:id="image1" fitHeight="520.0" fitWidth="480.0" layoutX="2.0" layoutY="-41.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="image1" fitHeight="520.0" fitWidth="480.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../Images/front_page_template.jpg" />
                </image>
             </ImageView>
-            <Text layoutX="376.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BESTSELLER!" wrappingWidth="69.13671875" />
-            <Text layoutX="377.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Only 1950lei" />
-            <Text layoutX="391.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1250lei" />
-            <Text layoutX="392.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1200lei" />
-            <Text layoutX="195.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sydney queen sized bed in grey velvet" wrappingWidth="196.375">
+            <Text layoutX="377.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BESTSELLER!" wrappingWidth="69.13671875">
+               <font>
+                  <Font size="12.0" />
+               </font></Text>
+            <Text layoutX="380.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Only 1950lei">
+               <font>
+                  <Font size="12.0" />
+               </font></Text>
+            <Text layoutX="385.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1250lei" />
+            <Text layoutX="385.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1200lei" />
+            <Text layoutX="195.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sydney queen sized bed in grey velvet" wrappingWidth="196.375">
                <font>
                   <Font size="18.0" />
                </font>
             </Text>
-            <Text layoutX="195.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alex double bed in navy">
+            <Text layoutX="198.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alex double bed in navy">
                <font>
                   <Font size="18.0" />
                </font>
             </Text>
-            <Text layoutX="195.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Galway double bed in oak" wrappingWidth="219.0">
+            <Text layoutX="198.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Galway double bed in oak" wrappingWidth="219.0">
                <font>
                   <Font size="18.0" />
                </font>
             </Text>
-            <ImageView fx:id="image3" fitHeight="77.0" fitWidth="137.0" layoutX="45.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="image3" fitHeight="77.0" fitWidth="137.0" layoutX="49.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../Images/bed1.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="backButton" alignment="CENTER" layoutX="86.0" layoutY="440.0" mnemonicParsing="false" onAction="#switchToPreviousScene" prefHeight="30.0" prefWidth="311.0" style="-fx-background-color: #0675ba;" text="Back to the main page!" textFill="WHITE">
+            <Button fx:id="backButton" alignment="CENTER" layoutX="99.0" layoutY="440.0" mnemonicParsing="false" onAction="#switchToPreviousScene" prefHeight="25.0" prefWidth="310.0" style="-fx-background-color: #0675ba;" text="Back to the main page!" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
@@ -59,12 +65,12 @@
                   <Glow level="0.15" />
                </effect>
             </Button>
-            <ImageView fx:id="image5" fitHeight="89.0" fitWidth="130.0" layoutX="49.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="image5" fitHeight="89.0" fitWidth="130.0" layoutX="53.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../Images/bed2.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="image6" fitHeight="87.0" fitWidth="137.0" layoutX="45.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="image6" fitHeight="87.0" fitWidth="137.0" layoutX="49.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../Images/bed3.jpg" />
                </image>

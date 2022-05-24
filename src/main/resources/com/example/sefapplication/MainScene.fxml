@@ -27,7 +27,7 @@
                   <Glow level="0.15" />
                </effect>
             </TextField>
-            <Button layoutX="65.0" layoutY="155.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="85.0" style="-fx-background-color: #6699ff;" text="All" textFill="WHITE">
+            <Button layoutX="65.0" layoutY="155.0" mnemonicParsing="false" onAction="#switchToAllScene" prefHeight="30.0" prefWidth="85.0" style="-fx-background-color: #6699ff;" text="All" textFill="WHITE">
                <effect>
                   <Glow level="0.15" />
                </effect>
@@ -37,12 +37,12 @@
                   <Glow level="0.15" />
                </effect>
             </Button>
-            <Button layoutX="250.0" layoutY="155.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #6699ff;" text="Chairs" textFill="WHITE">
+            <Button layoutX="250.0" layoutY="155.0" mnemonicParsing="false" onAction="#switchToChairsScene" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #6699ff;" text="Chairs" textFill="WHITE">
                <effect>
                   <Glow level="0.15" />
                </effect>
             </Button>
-            <Button layoutX="340.0" layoutY="155.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #6699ff;" text="Tables" textFill="WHITE">
+            <Button layoutX="340.0" layoutY="155.0" mnemonicParsing="false" onAction="#switchToTablesScene" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #6699ff;" text="Tables" textFill="WHITE">
                <effect>
                   <Glow level="0.15" />
                </effect>

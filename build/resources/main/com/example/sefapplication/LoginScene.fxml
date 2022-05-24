@@ -15,7 +15,7 @@
    <children>
       <Pane prefHeight="200.0" prefWidth="480.0" style="-fx-background-color: #0675ba;">
          <children>
-            <Text fill="WHITE" layoutX="106.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Customer" textAlignment="CENTER" wrappingWidth="268.248046875">
+            <Text fill="WHITE" layoutX="106.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Customer" textAlignment="CENTER" wrappingWidth="268.248046875">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>

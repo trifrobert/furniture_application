@@ -80,6 +80,8 @@ public class LoggedInSceneController implements Initializable {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+        LogginStatus.changeStatus(false);
+        LogoutStatus.changeStatus(true);
     }
 
     public void switchToBedsScene(ActionEvent event) throws IOException {
@@ -90,4 +92,27 @@ public class LoggedInSceneController implements Initializable {
         stage.show();
     }
 
+    public void switchToTablesScene(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Tables.fxml")));
+        Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void switchToChairsScene(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Chairs.fxml")));
+        Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void switchToAllScene(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("AllScene.fxml")));
+        Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }
