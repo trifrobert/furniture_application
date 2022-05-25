@@ -10,17 +10,25 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import java.io.File;
-import java.io.IOException;
+
+import java.io.*;
 import java.net.URL;
 import java.util.Objects;
 import java.util.ResourceBundle;
+import java.util.StringTokenizer;
 
 public class Chairs implements Initializable {
 
     @FXML
     public Button backButton;
+    @FXML
+    public Button buyButton;
+    @FXML
+    public Button buyButton2;
+    @FXML
+    public Button buyButton3;
     @FXML
     private Scene scene;
     @FXML
@@ -33,6 +41,132 @@ public class Chairs implements Initializable {
     private ImageView image5;
     @FXML
     private ImageView image6;
+    @FXML
+    private Text firstText;
+    @FXML
+    private Text secondText;
+    @FXML
+    private Text thirdText;
+
+    String fileContent = "";
+    String last_string = "";
+
+    public String incrementString(String string){
+        int value = Integer.parseInt(string);
+        value += 1;
+        return Integer.toString(value);
+    }
+
+    public int isAdded(Text text){
+        String toCheck = text.getText();
+        try{
+            File file = new File("src/cart.txt");
+            FileReader fr = new FileReader(file);
+            BufferedReader br = new BufferedReader(fr);
+
+            String buff;
+            int count = 0;
+            int result = 0;
+
+            while((buff = br.readLine()) != null){
+                count++;
+                if(buff.contains(toCheck)){
+                    result = count;
+                    StringTokenizer st = new StringTokenizer(buff," ");
+                    String strLastToken = null;
+                    while( st.hasMoreTokens() ) {
+                        strLastToken = st.nextToken();
+                    }
+                    last_string = strLastToken;
+                }
+                if(result != count){
+                    fileContent = fileContent + buff + "\n";
+                }
+            }
+            return result;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return 0;
+    }
+
+    public void buyButtonFirst(){
+        if(isAdded(firstText) != 0){
+            try{
+                fileContent = fileContent + firstText.getText() + " " + incrementString(last_string) + "\n";
+                PrintStream out;
+                out = new PrintStream(new FileOutputStream("src/cart.txt"));
+                out.append(fileContent);
+                fileContent = "";
+                last_string = "";
+            }catch (Exception e1){
+                e1.printStackTrace();
+            }
+        }
+        else{
+            try{
+                fileContent = fileContent + firstText.getText() + " " + "1\n";
+                PrintStream out;
+                out = new PrintStream(new FileOutputStream("src/cart.txt"));
+                out.append(fileContent);
+                fileContent = "";
+            }catch (Exception e2){
+                e2.printStackTrace();
+            }
+        }
+    }
+
+    public void buyButtonSecond(){
+        if(isAdded(secondText) != 0){
+            try{
+                fileContent = fileContent + secondText.getText() + " " + incrementString(last_string) + "\n";
+                PrintStream out;
+                out = new PrintStream(new FileOutputStream("src/cart.txt"));
+                out.append(fileContent);
+                fileContent = "";
+                last_string = "";
+            }catch (Exception e1){
+                e1.printStackTrace();
+            }
+        }
+        else{
+            try{
+                fileContent = fileContent + secondText.getText() + " " + "1\n";
+                PrintStream out;
+                out = new PrintStream(new FileOutputStream("src/cart.txt"));
+                out.append(fileContent);
+                fileContent = "";
+            }catch (Exception e2){
+                e2.printStackTrace();
+            }
+        }
+    }
+
+    public void buyButtonThird(){
+        if(isAdded(thirdText) != 0){
+            try{
+                fileContent = fileContent + thirdText.getText() + " " + incrementString(last_string) + "\n";
+                PrintStream out;
+                out = new PrintStream(new FileOutputStream("src/cart.txt"));
+                out.append(fileContent);
+                fileContent = "";
+                last_string = "";
+            }catch (Exception e1){
+                e1.printStackTrace();
+            }
+        }
+        else{
+            try{
+                fileContent = fileContent + thirdText.getText() + " " + "1\n";
+                PrintStream out;
+                out = new PrintStream(new FileOutputStream("src/cart.txt"));
+                out.append(fileContent);
+                fileContent = "";
+            }catch (Exception e2){
+                e2.printStackTrace();
+            }
+        }
+    }
 
     @Override
     public void initialize(URL URL, ResourceBundle resourceBundle){

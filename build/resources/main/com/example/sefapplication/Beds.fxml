@@ -37,17 +37,17 @@
                </font></Text>
             <Text layoutX="385.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1250lei" />
             <Text layoutX="385.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1200lei" />
-            <Text layoutX="195.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sydney queen sized bed in grey velvet" wrappingWidth="196.375">
+            <Text fx:id="secondText" layoutX="195.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sydney queen sized bed in grey velvet" textAlignment="CENTER" wrappingWidth="196.375">
                <font>
                   <Font size="18.0" />
                </font>
             </Text>
-            <Text layoutX="198.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alex double bed in navy">
+            <Text fx:id="thirdText" layoutX="198.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alex double bed in navy" textAlignment="CENTER">
                <font>
                   <Font size="18.0" />
                </font>
             </Text>
-            <Text layoutX="198.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Galway double bed in oak" wrappingWidth="219.0">
+            <Text fx:id="firstText" layoutX="198.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Galway double bed in oak" textAlignment="CENTER" wrappingWidth="219.0">
                <font>
                   <Font size="18.0" />
                </font>
@@ -57,7 +57,7 @@
                   <Image url="@../../../../../Images/bed1.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="backButton" alignment="CENTER" layoutX="99.0" layoutY="440.0" mnemonicParsing="false" onAction="#switchToPreviousScene" prefHeight="25.0" prefWidth="310.0" style="-fx-background-color: #0675ba;" text="Back to the main page!" textFill="WHITE">
+            <Button fx:id="backButton" alignment="CENTER" layoutX="85.0" layoutY="440.0" mnemonicParsing="false" onAction="#switchToPreviousScene" prefHeight="25.0" prefWidth="310.0" style="-fx-background-color: #0675ba;" text="Back to the main page!" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
@@ -75,6 +75,9 @@
                   <Image url="@../../../../../Images/bed3.jpg" />
                </image>
             </ImageView>
+            <Button fx:id="buyButton" layoutX="325.0" layoutY="127.0" mnemonicParsing="false" onAction="#buyButtonFirst" style="-fx-background-color: #6699ff;" text="Buy" />
+            <Button fx:id="buyButton2" layoutX="325.0" layoutY="260.0" mnemonicParsing="false" onAction="#buyButtonSecond" style="-fx-background-color: #6699ff;" text="Buy" />
+            <Button fx:id="buyButton3" layoutX="325.0" layoutY="396.0" mnemonicParsing="false" onAction="#buyButtonThird" style="-fx-background-color: #6699ff;" text="Buy" />
          </children>
       </Pane>
    </children>
